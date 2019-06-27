@@ -1,0 +1,121 @@
+:root {
+  --page-color: url(https://vignette.wikia.nocookie.net/finalfantasy/images/5/5f/XIV_Wallpaper_06.jpg/revision/latest?cb=20130726094520);
+  --submit-button-color: rgb(28, 136, 224);
+  --title-color: rgb(28, 136, 224);
+  --survey-color: rgb(220, 224, 175);
+  --page-font: "Eczar", serif;
+  --survey-font: "Eczar", serif;
+}
+
+body {
+  background: var(--page-color, gray);
+  font-family: var(--page-font, monospace);
+  text-align: center;
+  padding: 0 15vw 0 15vw;
+}
+
+main {
+  background: var(--survey-color, white);
+  margin: 0 10px 0 10px;
+  border-radius: 5px;
+  opacity: 0.9;
+  box-shadow: 10px 10px 100px 20px black;
+  border-color: black;
+  padding: 1vw 5vw 2vw 5vw;
+}
+
+#title {
+  text-align: center;
+  font-size: 3.5vw;
+  color: var(--title-color, black);
+  border-color: black;
+  border-width: 10px;
+  text-shadow: 2px 2px 3px #000000;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+#survey-form {
+  font-family: var(--survey-font, monospace);
+  font-size: 1vw;
+}
+
+.inputs {
+  display: flex;
+  font-size: 1.2vw;
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+.lefttab {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 57%;
+  height: 100%;
+  font-weight: bold;
+  justify-content: flex-end;
+  margin-right: 5vw;
+}
+
+.righttab {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  font-size: 1.2vw;
+}
+
+.righttab input {
+  font-size: 1.2vw;
+  width: 70%;
+}
+
+.righttab select {
+  font-size: 1.2vw;
+  width: 30%;
+}
+
+.righttab textarea {
+  font-size: 1.2vw;
+  width: 100%;
+  align-self: stretch;
+  height: 100%;
+}
+
+.radiotab {
+  border-color: black;
+  border-radius: 2px;
+  border: dotted;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 50%;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.checktab {
+  border-color: black;
+  border-radius: 2px;
+  border: dotted;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 50%;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+#submit {
+  display: block;
+  background-color: var(--submit-button-color, gray);
+  font-size: 1.5vw;
+  color: black;
+  border-color: black;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}

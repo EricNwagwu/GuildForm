@@ -1,0 +1,125 @@
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link
+  <link
+  href="https://fonts.googleapis.com/css?family=Eczar|Fredoka+One&display=swap"
+  rel="stylesheet"
+/>
+<header>
+  <h1 id="title">Guild Application Form</h1>
+</header>
+<body>
+  <main>
+    <p id="description">
+      This is an application for my adventurers guild.<br />Tell me what kind of
+      hero you are!
+    </p>
+    <form id="survey-form">
+      <div class="inputs">
+        <div class="lefttab">
+          <label id="name-label" for="name">*Name:</label>
+        </div>
+        <div class="righttab">
+          <input
+            id="name"
+            type="text"
+            autofocus
+            required
+            placeholder="Enter your name"
+          />
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="lefttab">
+          <label id="email-label" for="email">*Email:</label>
+        </div>
+        <div class="righttab">
+          <input
+            id="email"
+            type="email"
+            required
+            placeholder="Enter your email"
+          />
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="lefttab">
+          <label id="number-label" for="number">*Age:</label>
+        </div>
+        <div class="righttab">
+          <input
+            id="number"
+            type="number"
+            required
+            min="1"
+            max="120"
+            placeholder="Enter your age"
+          />
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="lefttab">
+          <label for="dropdown">
+            *In a dungeon, what is your role?
+          </label>
+        </div>
+        <div class="righttab">
+          <select id="dropdown">
+            <option disabled value>Select an option</option>
+            <option value="Tank">Tank</option>
+            <option value="DPS">DPS</option>
+            <option value="Healer">Healer</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="lefttab">
+          <label for="radiobutton">
+            *How would you rate your combat prowess?
+          </label>
+        </div>
+        <div class="radiotab">
+          <input type="radio" value="1" name="prowess" checked />Beginner
+          <input type="radio" value="2" name="prowess" />Novice
+          <input type="radio" value="3" name="prowess" />Amateur
+          <input type="radio" value="4" name="prowess" />Skilled
+          <input type="radio" value="5" name="prowess" /> Combat Expert
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="lefttab">
+          <label for="radiobutton">
+            *How did you find out about this guild?
+          </label>
+        </div>
+        <div class="checktab">
+          <input type="checkbox" value="Portfolio" />My Portfolio Website
+          <input type="checkbox" value="Friend" /> A Friend
+          <input type="checkbox" value="GuildMem" />A Guild Member
+          <input type="checkbox" value="Advertisement" />An Advertisement
+          <input type="checkbox" value="Other" />Some other source
+        </div>
+      </div>
+      <div class="inputs">
+        <div class="lefttab">
+          <label for="comments">
+            *Describe your character in 4-5 sentences.
+          </label>
+        </div>
+        <div class="righttab">
+          <textarea
+            id="comments"
+            class="input-field"
+            style="height:50px;width:30%;resize:vertical;"
+            name="comment"
+            required
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+      </div>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
